@@ -1,0 +1,284 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'NanumSquare', sans-serif;
+}
+
+.form-wrapper, .wrapper {
+  max-width: 390px;
+  border: solid 1px #ddd;
+  background-color: #1abcfe;
+  min-height: 844px;
+  padding: 20px;
+}
+.wrapper {
+  background-color: #fff;
+  padding: 0;
+  transform: rotate(0);
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #ddd;
+  border-radius: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1abcfe;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-container {
+  position: absolute;
+  width: 90%;
+  background: #fff;
+  border-radius: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 30px;
+}
+
+.form-container  .title {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.form-container .title > h1 {
+  font-size: 36px;
+  color: #1abcfe;
+  font-weight: 900;
+}
+
+/* .form-container .content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #ddd;
+  border-radius: 10px;
+} */
+/* .form-container .content button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #1abcfe;
+  border-radius: 10px;
+  background-color: #1abcfe;
+  color: #fff;
+  cursor: pointer;
+} */
+.form-container .content a {
+  color: #555;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+header {
+  background-color: #1abcfe;
+  color: #fff;
+  height: 45px;
+  padding: 0 20px;
+}
+header > a {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header > h1 {
+  text-align: center;
+  float: left;
+  font-size: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 45px;;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  background: #1abcfe;
+  display: flex;
+  align-items: center;
+}
+footer > a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+footer > a > .footer_nav_title {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* search */
+.search {
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: solid 1px #ddd;
+}
+.search > .item {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+.search button {
+  margin-top: 5px;
+}
+.category {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+.category > p{
+  display: flex;
+  line-height: 32px;
+  margin: 0;
+  margin-right: auto;
+}
+.category > select {
+  display: flex;
+  width: 55%;
+  margin: 0;
+  padding: 7px;
+  margin-left: auto;
+}
+.category > button {
+  width: 15%;
+  margin: 0;
+  margin-left: auto;
+  background-color: #555;
+  border: none;
+}
+
+.table-wrapper {
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 30px;
+  display: flex;
+  /* margin-bottom: 70px;; */
+  max-height: 400px;
+  overflow-y: scroll;
+}
+#order-table-wrapper{
+  max-height: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table tbody {
+  border: none;
+}
+table thead {
+  border-top: 2px solid #111;
+}
+table th {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+table td {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  text-align: center;
+}
+table td input {
+  position: relative;
+  width: 60px;
+  text-align: center;
+  height: 25px;
+  margin: 0;
+}
+
+table td button {
+  height: 25px;
+  padding: 0;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+table td button span {
+  line-height: 25px;
+  float: left;
+  margin: 0;
+  margin-right: 5px;
+}
+table td button span.material-symbols-outlined {
+  font-size: 18px !important;
+  line-height: 25px;
+  float: left;
+  margin: 0;
+}
+
+.total-price {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.total-price > p {
+  margin: 0;
+  line-height: 27px;
+}
+.total-price > p:nth-child(2) {
+  font-weight: 900;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.total-price > button {
+  border-radius: 20px;
+  width: 90px;
+  padding: 5px 0;
+  margin: 0;
+}
+
+/* order list */
+.order_list {
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 30px;
+  display: flex;
+  max-height: 500px;
+  overflow-y: scroll;
+  flex-direction: column;
+}
+.order_list .order_item {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.order_list .order_item > p {
+  font-weight: bold;
+}
+.order_list .table-wrapper {
+  margin-top: 10px;
+  padding: 0;
+}
+.order_list .order_item .total-price {
+  margin-top: 10px;
+  padding: 0;
+}
